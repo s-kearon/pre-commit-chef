@@ -7,6 +7,8 @@ Gem::Specification.new do |s|
   s.summary = 'Pre-commit hooks for Chef projects'
   s.add_runtime_dependency 'cookstyle', '~> 3.0'
   s.add_runtime_dependency 'foodcritic', '~> 15.1'
+  s.add_runtime_dependency 'nokogiri', '= 1.13.10'
+  s.add_runtime_dependency 'parallel', '= 1.24.0'
   s.bindir = 'hooks'
   s.executables << 'run_cookstyle.rb'
   s.executables << 'run_foodcritic.rb'
